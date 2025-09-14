@@ -1,37 +1,40 @@
-
+/* Fondo animado con gradiente */
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
-  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
-  color: #fff;
-  text-align: center;
-  overflow-x: hidden;
-}
-
-.stars {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.envelope {
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  background: linear-gradient(270deg, #ff758c, #ff7eb3, #ffc3a0, #ffafbd);
+  background-size: 800% 800%;
+  animation: fondo 15s ease infinite;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  text-align: center;
 }
 
-.postage-stamp {
-  width: 80px;
-  height: 80px;
-  color: #fff;
+@keyframes fondo {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-h1, h2, p {
-  margin: 20px;
+/* Título */
+h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+/* Texto */
+p {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+/* Música */
+audio {
+  margin-top: 20px;
 }
