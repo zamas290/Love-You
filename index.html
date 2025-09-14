@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Te Amo</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para Ti BCode</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <h1>💖 Te Amo 💖</h1>
-  <p>Este es un detalle hecho con mucho cariño.</p>
+  <div class="stars" id="stars"></div>
+  <div class="envelope">
+    <div class="envelope-inner">
+      <div class="envelope-front">
+        <div class="postage-stamp">
+          <svg fill="currentColor" viewBox="0 0 512 512">
+            <path d="M253.98,257.652c0-..."></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <!-- Música -->
-  <audio autoplay loop controls>
-    <source src="musica.mp3.mp3" type="audio/mpeg">
+  <!-- 🎵 Música de fondo -->
+  <audio id="bg-music" autoplay loop>
+    <source src="musica.mp3" type="audio/mpeg">
     Tu navegador no soporta audio.
   </audio>
+
 </body>
 </html>
